@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #2e3440; /* Nord Polar Night color */
+    color: #2e3440; /* Nord Snow Storm color for text */
+    overflow-x: auto;
+}
+
+#timers {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.timer {
+    border: 1px solid #4c566a; /* Nord Polar Night color */
+    padding: 20px;
+    margin: 10px;
+    background-color: #3b4252; /* Nord Polar Night color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.timer-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #88c0d0; /* Nord Frost color */
+    text-align: center; /* Center the text */
+    display: block; /*Make it a block element to occupy the full width */
+    width: 100%; /*Ensure it takes the full width of its container */
+}
+
+.timer-display {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2e3440; /* Nord Frost color */
+}
+
+.split {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5e81ac; /* Nord Aurora color */
+    color: #eceff4; /* Nord Snow Storm color */
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Add right margin to all buttons */
+}
+
+button:hover {
+    background-color: #81a1c1; /* Lighter Nord Aurora color */
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #4c566a; /* Nord Polar Night color */
+    background-color: #3b4252; /* Nord Polar Night color */
+    color: #d8dee9; /* Nord Snow Storm color */
+}
+
+.timer button:last-child {
+    margin-right: 0;
+}
+
+.latest-split {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.split-dropdown {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.split-dropdown div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.split-dropdown div:last-child {
+    border-bottom: none;
+}
